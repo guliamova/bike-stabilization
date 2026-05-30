@@ -106,7 +106,7 @@ def draw_trail(surf: pygame.Surface, trail: list[tuple[float,float]],
     if len(trail) < 2:
         return
     pts = [world_to_screen(x, y) for (x, y) in trail]
-    pygame.draw.lines(surf, color, False, pts, 2)
+    pygame.draw.lines(surf, color, False, pts, 4)
 
 
 # ---------- main ----------
